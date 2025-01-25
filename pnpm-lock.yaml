@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      likelion-vite-react:
+        specifier: 'link:'
+        version: 'link:'
       react:
         specifier: '19'
         version: 19.0.0

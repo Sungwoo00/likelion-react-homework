@@ -38,6 +38,7 @@
     "vite": "6.0.7"
   },
   "dependencies": {
+    "likelion-vite-react": "link:",
     "react": "19",
     "react-dom": "19"
   },
