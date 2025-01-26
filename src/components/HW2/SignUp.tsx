@@ -14,14 +14,18 @@ function SignUp() {
     setFormData({ ...formData, [key]: value });
   };
 
+  const handleSubmit = () => {
+    console.log(formData);
+  };
+
   return (
     <section>
       <h2>회원가입 정보 입력 페이지</h2>
-      <form>
+      <form action={handleSubmit}>
         <FormInput
           title="이름"
           type="text"
-          name="userName"
+          name="name"
           placeholder="2글자 이상 입력"
           value={formData.name}
           onChange={(value) => handleChange('name', value)}
