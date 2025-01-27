@@ -1,5 +1,6 @@
 import EyeClosedIcon from '../../assets/EyeClosed.png';
 import EyeOpenIcon from '../../assets/EyeOpen.png';
+import './ToggleVisible.css';
 
 interface ToggleVisiible {
   onClick?: () => void;
@@ -9,6 +10,7 @@ interface ToggleVisiible {
 function ToggleVisiible({ onClick, isVisible }: ToggleVisiible) {
   return (
     <button
+      className="ToggleVisible"
       type="button"
       role="switch"
       onClick={onClick}
@@ -16,6 +18,7 @@ function ToggleVisiible({ onClick, isVisible }: ToggleVisiible) {
       aria-label={isVisible ? '비밀번호 보기' : '비밀번호 숨기기'}
     >
       <img
+        className="ToggleVisible__icon"
         width={20}
         height={20}
         src={isVisible ? EyeOpenIcon : EyeClosedIcon}

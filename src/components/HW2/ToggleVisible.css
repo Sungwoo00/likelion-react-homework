@@ -1,0 +1,10 @@
+.ToggleVisible {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.ToggleVisible__icon {
+  width: 20px;
+  height: 20px;
+}

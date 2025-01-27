@@ -1,4 +1,5 @@
 import { useFormStatus } from 'react-dom';
+import './FormButton.css';
 
 interface FormButton {
   text?: string;
@@ -8,7 +9,7 @@ function FormButton({ text }: FormButton) {
   const { pending } = useFormStatus();
 
   return (
-    <button type="submit" aria-disabled={pending}>
+    <button className="FormButton" type="submit" aria-disabled={pending}>
       {pending ? `${text} 중~` : `${text}`}
     </button>
   );

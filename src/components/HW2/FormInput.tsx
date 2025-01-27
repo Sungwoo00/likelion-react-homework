@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ToggleVisiible from './ToggleVisible';
+import './FormInput.css';
 
 interface FormInput {
   title?: string;
@@ -30,10 +31,13 @@ function FormInput({
     setPasswordVisible(!passwordVisible);
   };
   return (
-    <>
-      <label htmlFor={name}>{title}</label>
-      <div>
+    <div className="FormInput">
+      <label className="FormInput__label" htmlFor={name}>
+        {title}
+      </label>
+      <div className="FormInput__container">
         <input
+          className="FormInput__input"
           autoComplete="new-password"
           type={type === 'password' && passwordVisible ? 'text' : type}
           id={name}
@@ -48,7 +52,7 @@ function FormInput({
           />
         )}
       </div>
-    </>
+    </div>
   );
 }
 

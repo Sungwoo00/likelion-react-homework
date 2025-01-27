@@ -1,0 +1,32 @@
+.FormInput {
+  width: 284px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormInput::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9de;
+  margin: 12px 0;
+}
+
+.FormInput__label {
+  font-size: 16px;
+  width: 100%;
+  color: #26262c;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.FormInput__container {
+  display: flex;
+  width: 100%;
+}
+
+.FormInput__input {
+  border: none;
+  flex: 1;
+}
