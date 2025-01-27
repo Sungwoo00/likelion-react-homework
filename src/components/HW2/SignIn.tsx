@@ -19,7 +19,7 @@ function SignIn() {
 
   return (
     <section>
-      <h2 className="sr-only">회원가입 정보 입력 페이지</h2>
+      <h2 className="sr-only">로그인 정보 입력 페이지</h2>
       <form className="SignIn" action={handleSubmit}>
         <div className="SignInForm__inputs">
           <FormInput

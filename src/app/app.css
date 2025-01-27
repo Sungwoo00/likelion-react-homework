@@ -1,5 +1,7 @@
 @layer components {
   .App {
+    background-color: #2db400;
+    height: 100vw;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
