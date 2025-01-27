@@ -1,5 +1,5 @@
-import SignUp from '@/components/HW2/SignUp';
-import SignIn from '@/components/HW2/SignIn';
+import SignUp from '@/components/HW3_FormUI/SignUp';
+import SignIn from '@/components/HW3_FormUI/SignIn';
 import './app.css';
 
 function App() {
