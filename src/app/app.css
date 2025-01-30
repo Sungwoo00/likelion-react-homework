@@ -1,9 +1,13 @@
-@layer components {
-  .App {
-    background-color: #2db400;
-    height: 100vw;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.App {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App > *:first-child {
+  grid-column: 1 / -1;
 }
