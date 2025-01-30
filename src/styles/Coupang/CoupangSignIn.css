@@ -1,0 +1,38 @@
+.CoupangSignIn__logo {
+  display: block;
+  width: 246px;
+  height: 56px;
+  margin: 0 auto 48px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.CoupangSignInForm__checkbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.CoupangSignInForm__find-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0074e9;
+  gap: 6px;
+}
+
+.CoupangSignInForm__find-arrow {
+  width: 8px;
+  height: 16px;
+  vertical-align: middle;
+}

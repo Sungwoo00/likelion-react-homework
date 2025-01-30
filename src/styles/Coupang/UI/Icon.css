@@ -1,0 +1,24 @@
+.Icon {
+  width: 45px;
+  height: 50px;
+  background: white;
+  border: none;
+  padding: 0;
+}
+
+.Icon__Shape {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Icon--letter .Icon__Shape,
+.Icon--lock .Icon__Shape {
+  width: 45px;
+  height: 50px;
+}
+
+.Icon--hide .Icon__Shape,
+.Icon--show .Icon__Shape {
+  width: 20px;
+  height: 20px;
+}
