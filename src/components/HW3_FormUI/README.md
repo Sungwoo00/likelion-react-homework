@@ -2,6 +2,11 @@
 
 > 회원가입과 로그인 폼 UI 컴포넌트 구현에 대한 설명글 입니다.
 
+## 로그인 및 회원가입 렌더링 결과
+
+| 회원가입 화면 | 로그인 화면 |
+|:---:|:---:|
+| ![회원가입 폼](https://github.com/user-attachments/assets/73beec2e-d052-446a-8e65-44ba0c99bf92) | ![로그인 폼](https://github.com/user-attachments/assets/fd52abdd-5007-43fe-a0eb-e5e752bb45dd) |
 ## 컴포넌트 및 웹 접근성
 
 ### 비밀번호 표시 및 숨김 컴포넌트(ToggleVisible.tsx)
