@@ -1,0 +1,46 @@
+.Tooltip {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  background: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+  width: 275px;
+  height: 30px;
+}
+
+.Tooltip__text {
+  color: #555;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Tooltip__arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.Tooltip--top {
+  top: -10px;
+  left: 1px;
+}
+
+.Tooltip--bottom {
+  top: -8px;
+  right: 10px;
+}
+
+.Tooltip--left {
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Tooltip--right {
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
