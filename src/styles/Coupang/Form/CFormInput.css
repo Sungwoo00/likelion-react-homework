@@ -1,0 +1,62 @@
+.CFormInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+
+.CFormInput__Wrapper {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.CFormInput__label {
+  display: flex;
+  align-items: center;
+}
+
+.CFormInput__container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 100%;
+  overflow: hidden;
+}
+
+.CFormInput__input {
+  flex: 1;
+  height: 100%;
+  padding: 0 12px;
+  outline: none;
+  border: none;
+}
+
+.CFormInput__label span {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.CFormInput__Wrapper--error {
+  border: 1px solid #e52528;
+  overflow: hidden;
+}
+
+.CFormInput__error {
+  padding-left: 12px;
+  margin: 0;
+  margin-top: 10px;
+  color: #e52528;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+}
