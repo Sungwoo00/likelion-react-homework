@@ -1,4 +1,5 @@
 import { useFormStatus } from 'react-dom';
+import '../../../styles/Coupang/Form/CFormButton.css';
 
 interface CFormButton {
   text?: string;
@@ -11,7 +12,7 @@ function CFormButton({ text, mode = 'Primary', disabled = true }: CFormButton) {
 
   return (
     <button
-      className={`CFormButton CFormButton--${mode}${disabled ? 'CFormButton--diabled' : ''}`}
+      className={`CFormButton CFormButton--${mode} ${disabled ? 'CFormButton--disabled' : ''}`}
       type="submit"
       disabled={disabled}
       aria-disabled={pending}
