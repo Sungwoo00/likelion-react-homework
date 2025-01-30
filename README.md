@@ -1,36 +1,5 @@
-# Vite 커스텀 스캐폴드 템플릿
+# 리액트 과제 저장소
 
-
-## 저장소 복사 및 환경구성 동기화 방법
-```
-degit Sungwoo00/likelion-vite-react <폴더_이름>
-cd <폴더_이름>
-pnpm install
-```
-
-## 실행 명령어
-
-개발 서버 구동
-```
-pnpm dev
-```
-
-프로젝트 빌드
-```
-pnpm build
-``` 
-
-프로젝트 프리뷰
-```
-pnpm preview
-```
-
-린팅 검사
-```
-pnpm lint
-```
-
-포멧팅
-```
-pnpm format
-```
+## 과제3
+- [로그인 및 회원가입 UI 과제 확인](https://github.com/Sungwoo00/likelion-react-homework/blob/4846fc0e0f82dde573390d7be0e6b90c206cfdd3/src/components/HW3_FormUI/README.md)
+- [쿠팡 로그인 과제 확인](https://github.com/Sungwoo00/likelion-react-homework/blob/main/src/components/HW3_Coupang/README.md)
