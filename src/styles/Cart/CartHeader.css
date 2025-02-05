@@ -1,0 +1,7 @@
+.cart-header {
+  width: 685px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}

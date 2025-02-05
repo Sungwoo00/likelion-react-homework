@@ -1,0 +1,18 @@
+.cart-title{
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.cart-title .Icon img{
+  width: 48px;
+  height: 48px;
+}
+
+.cart-title span{
+  height: 29px;
+  text-align: center;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 700;
+}
