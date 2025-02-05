@@ -1,0 +1,27 @@
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  width: 522px;
+  height: 46px;
+  gap: 8px;
+}
+
+.product-info__title{
+  min-width: 73px;
+  color: #4D4D4D;
+  font-size: 20px;
+  font-weight: 400;
+  height: 20px;
+  margin: 0;
+
+}
+
+.procudt-info__price{
+  min-width: 80px;
+  font-size: 18px;
+  font-weight: 800;
+  height: 18px;
+  margin: 0;
+}
