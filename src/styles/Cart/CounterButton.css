@@ -1,0 +1,25 @@
+.counter-button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #999999;
+}
+
+.counter-button:not(.counter-button--disabled):focus{
+  background-color: #EEEEEE;
+  color: #1A1A1A;
+}
+
+.counter-button:hover{
+  color: #1A1A1A;
+}
+
+.counter-button--diabled{
+  color: #B3B3B3;
+}
