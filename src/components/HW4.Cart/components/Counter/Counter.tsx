@@ -1,28 +1,34 @@
-import { useState } from 'react';
 import CounterButton from './CounterButton';
 import CounterDisplay from './CounterDisplay';
 import '@/styles/Cart/Counter.css'
 
-function Counter(){
+interface Counter{
+  count: number;
+  quantity: number;
+  onCountChange:(count:number)=> void;
+}
 
-  const [count, setCount] = useState(0);
+function Counter({count, onCountChange, quantity}:Counter){
+
 
   const handleMinus = () => {
-    setCount(count => count - 1)
+    onCountChange(count - 1)
   }
 
   const handlePlus = () => {
-    setCount(count => count + 1)
+    onCountChange(count + 1)
   }
 
-  const handleClick = count <= 0;
+  const handleClickMinus = count <= 0;
+  const handleClickPlus = count >= quantity
+  
 
   return(
     <div className='counter'>
-      <CounterButton type='minus' disabled={handleClick} onClick={handleMinus}
+      <CounterButton type='minus' disabled={handleClickMinus} onClick={handleMinus}
       />
       <CounterDisplay counter={count}/>
-      <CounterButton type='plus' disabled={false}  onClick={handlePlus}
+      <CounterButton type='plus' disabled={handleClickPlus}  onClick={handlePlus}
       />
     </div>
   )
