@@ -12,18 +12,20 @@ interface ProductItem {
 
 function ProductItem ({items, onTotalPriceChange}:ProductItem) {
 
-  const [counts, setCounts] = useState(new Array(items.length).fill(1));
+  const initialCounts = new Array(items.length).fill(1);
+  const [counts, setCounts] = useState(initialCounts);
+
+  const calcTotal = (counts: number[]) => {
+    return counts.reduce((total, count, index) => {
+      return total + count * items[index].price;
+    }, 0);
+  };
 
   const handleCountChange = (index: number, newCount: number) => {
     const newCounts = [...counts];
     newCounts[index] = newCount;
     setCounts(newCounts);
-    
-    const newTotal = newCounts.reduce((total, count, idx) => {
-      return total + (count * items[idx].price);
-    }, 0);
-    
-    onTotalPriceChange(newTotal);
+    onTotalPriceChange(calcTotal(newCounts));
   };
 
   return(

@@ -7,7 +7,11 @@ import "@/styles/Cart/Cart.css"
 
 function Cart() {
 
-  const [totalPrice, setTotalPrice] = useState(0);
+  const initialTotal = CartItems.reduce((total, item) => {
+    return total + item.price;
+  }, 0);
+
+  const [totalPrice, setTotalPrice] = useState(initialTotal);
 
   const handleTotalPriceChange = (newTotal: number)=> {
     setTotalPrice(newTotal);
