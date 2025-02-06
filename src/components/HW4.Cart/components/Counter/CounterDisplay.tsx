@@ -1,10 +1,10 @@
 import '@/styles/Cart/CounterDisplay.css'
 
 interface CounterDisplay{
-  counter: number
+  counter: number;
 }
 
-function CounterDisplay({counter = 0}:CounterDisplay) {
+function CounterDisplay({counter = 1}:CounterDisplay) {
 
   return(
     <span className='counter-display'>{counter}</span>

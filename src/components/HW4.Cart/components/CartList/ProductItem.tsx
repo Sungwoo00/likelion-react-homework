@@ -12,7 +12,7 @@ interface ProductItem {
 
 function ProductItem ({items, onTotalPriceChange}:ProductItem) {
 
-  const [counts, setCounts] = useState(new Array(items.length).fill(0));
+  const [counts, setCounts] = useState(new Array(items.length).fill(1));
 
   const handleCountChange = (index: number, newCount: number) => {
     const newCounts = [...counts];
@@ -27,7 +27,7 @@ function ProductItem ({items, onTotalPriceChange}:ProductItem) {
   };
 
   return(
-    <div>   
+    <div className='product-list'>   
     {items.map((item,index)=>(
          <div key={item.id} className='product-item'>
          <ProductImage src={item.src} alt={`${item.title} 이미지`}/>

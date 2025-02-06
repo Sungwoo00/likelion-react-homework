@@ -19,7 +19,7 @@ function Counter({count, onCountChange, quantity}:Counter){
     onCountChange(count + 1)
   }
 
-  const handleClickMinus = count <= 0;
+  const handleClickMinus = count <= 1;
   const handleClickPlus = count >= quantity
   
 
