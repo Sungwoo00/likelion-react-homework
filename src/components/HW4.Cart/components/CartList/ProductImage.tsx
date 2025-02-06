@@ -7,11 +7,10 @@ interface ProductImage{
 
 function ProductImage({src, alt}:ProductImage) {
 
-  console.log(src)
 
   return(
     <div>
-      <img src={src} alt={alt} width={64} height={64}/>
+      <img className='product-image' src={src} alt={alt} width={64} height={64}/>
     </div>
   )
 }
