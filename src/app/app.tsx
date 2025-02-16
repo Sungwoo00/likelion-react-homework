@@ -3,6 +3,7 @@ import SignIn from '@/components/HW3_FormUI/SignIn';
 import CoupangCoupangSignIn from '@/components/HW3_Coupang/CoupangSignIn';
 import './app.css';
 import Cart from '@/components/HW4.Cart/Cart';
+import SearchForm from '@/components/HW5.Search/SearchForm';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       {/* <CoupangCoupangSignIn />
       <SignUp />
       <SignIn /> */}
-      <Cart/>
+      <SearchForm/>
     </div>
   );
 }
