@@ -9,7 +9,7 @@ interface CardList {
 function CardList({data}:CardList) {
  const cards = data.map(data => ({
    id: data.id,
-   src: '../assets/b1.jpeg',
+   src: data.src,
    title: data.name,
    des: data.description
  }))

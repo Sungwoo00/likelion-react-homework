@@ -46,14 +46,15 @@ function Search() {
   }, []);
 
   return (
-    <div className="search-container">
+    <section className="search-container">
+      <h2 className='search-title'>흑/백 과사전</h2>
       <SearchForm 
         value={searchQuery} 
         onSubmit={handleSubmit}
         onChange={setSearchQuery}
       />
       <CardList data={filteredData} />
-    </div>
+    </section>
   )
 }
 
