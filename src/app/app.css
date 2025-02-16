@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-rows: auto auto;
   gap: 20px;
   padding: 20px;
@@ -8,6 +8,6 @@
   margin: 0 auto;
 }
 
-.App > *:first-child {
+/* .App > *:first-child {
   grid-column: 1 / -1;
-}
+} */
