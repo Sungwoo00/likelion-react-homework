@@ -1,0 +1,28 @@
+.card {
+  max-width: 22rem;
+  border: 1px solid #e5e7eb; 
+  border-right-width: 4px;
+  border-radius: 1rem;  
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.05);  
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card-image {
+  width: 5rem;
+  height: 6rem;  
+  object-fit: cover;
+  border-radius: 0.375rem; 
+  margin-bottom: 1rem; 
+}
+
+.card-title {
+  display: block;
+  font-weight: 800; 
+  font-size: 2rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.card-description {
+  color: #4b5563; 
+}
