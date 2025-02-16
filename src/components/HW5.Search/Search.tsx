@@ -47,7 +47,10 @@ function Search() {
 
   return (
     <section className="search-container">
-      <h2 className='search-title'>흑/백 과사전</h2>
+      <div className='search-header'>
+        <h2 className='search-title'>흑 / 백 과사전</h2>
+        <img className='search-title__img' src="/SearchImg/book.png" alt="흑,백과사전"/>
+      </div>
       <SearchForm 
         value={searchQuery} 
         onSubmit={handleSubmit}

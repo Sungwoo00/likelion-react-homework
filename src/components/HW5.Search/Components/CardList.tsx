@@ -15,7 +15,7 @@ function CardList({data}:CardList) {
  }))
 
  return (
-   <div>
+   <div className='card-list'>
      {cards.map(card => (
        <Card 
          key={card.id}
